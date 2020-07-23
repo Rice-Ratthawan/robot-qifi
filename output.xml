@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.5 on win32)" generated="20200723 17:11:42.565" rpa="false">
+<suite id="s1" name="Qifi" source="C:\Users\ratthawanser\Documents\NewGraduateWorkCamp\week3\SWtesting\homework-qifi\qifi.robot">
+<test id="s1-t1" name="สร้างQR Code">
+<kw name="เปิดโครมเข้า URL qifi.org">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://qifi.org/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200723 17:11:42.835" level="INFO">Opening browser 'chrome' to base url 'https://qifi.org/'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200723 17:11:52.395" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20200723 17:11:52.394" endtime="20200723 17:11:52.395"></status>
+</kw>
+<msg timestamp="20200723 17:11:52.403" level="FAIL">SessionNotCreatedException: Message: session not created
+from chrome not reachable
+  (Session info: chrome=84.0.4147.89)
+</msg>
+<status status="FAIL" starttime="20200723 17:11:42.835" endtime="20200723 17:11:52.403"></status>
+</kw>
+<status status="FAIL" starttime="20200723 17:11:42.834" endtime="20200723 17:11:52.404"></status>
+</kw>
+<status status="FAIL" starttime="20200723 17:11:42.834" endtime="20200723 17:11:52.404" critical="yes">SessionNotCreatedException: Message: session not created
+from chrome not reachable
+  (Session info: chrome=84.0.4147.89)
+</status>
+</test>
+<status status="FAIL" starttime="20200723 17:11:42.565" endtime="20200723 17:11:52.406"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Qifi">Qifi</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
